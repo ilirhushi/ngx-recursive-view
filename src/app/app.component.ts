@@ -48,7 +48,7 @@ export class AppComponent {
               title: 'Roma',
               children: [
                 {
-                  title: 'Main Tema',
+                  title: 'Main Team',
                   children: []
                 },
               ]
