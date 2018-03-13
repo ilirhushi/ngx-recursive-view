@@ -4,6 +4,63 @@ An Angular 5 Basic project to illustrate how to build a recursive parent-child v
 
 ![logo](image.png "Logo")
 
+## Example
+
+You define the structure of the tree as below using parent-children structure and the above tree structure will be generated as shown in the image.
+
+```
+public tree = [
+    {
+      title: 'Basketball',
+      children: []
+    },
+    {
+      title: 'Football',
+      children: [
+        {
+          title: 'Liga BBVA',
+          children: []
+        },
+        {
+          title: 'Seria A',
+          children: [
+            {
+              title: 'AC Milan',
+              children: []
+            },
+            {
+              title: 'Juventus',
+              children: []
+            },
+            {
+              title: 'Internazionale Milan',
+              children: [
+                {
+                  title: 'Main Team',
+                  children: []
+                },
+                {
+                  title: 'Youth Team',
+                  children: []
+                },
+              ]
+            },
+            {
+              title: 'Roma',
+              children: [
+                {
+                  title: 'Main Team',
+                  children: []
+                },
+              ]
+            },
+          ]
+        },
+      ]
+    },
+  ];
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
